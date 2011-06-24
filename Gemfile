@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails'
+gem 'rails', '3.0.8.rc1'
 gem 'haml-rails'
 gem 'formtastic'
 gem 'heroku'
