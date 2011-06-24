@@ -3,15 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-
-module ::Zaytona
-  class Application
-    include Rake::DSL
-  end
-end
-
-module ::RakeFileUtils
-  extend Rake::FileUtilsExt
-end
+require 'rake/rdoctask'
 
 Zaytona::Application.load_tasks
