@@ -172,5 +172,5 @@ DEPENDENCIES
   heroku
   pg
   rails
-  refinerycms (~> 1.0.0)
-  refinerycms-i18n (~> 1.0.0)
+  refinerycms
+  refinerycms-i18n
