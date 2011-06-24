@@ -1,0 +1,13 @@
+#edit-note
+  - title "Notes"
+  - @notes.each do |category, notes|
+    %ul#collapser
+      %li
+        = category
+        %ul
+          - notes.each do |note|
+            %li
+              = link_to note.title, edit_note_url(note)
+              = link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete
+.clr
+%p= link_to "New Note", new_note_path
