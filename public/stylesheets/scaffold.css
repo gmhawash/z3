@@ -54,3 +54,32 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+div.destroy, ul.collapser a {
+display: block;
+float: left;
+}
+
+ul.collapser li{
+display: block;
+clear: both;
+}
+
+ul.collapser ul{
+ display: none;
+ margin-left: -30px;
+
+}
+
+a.category{
+  font-weight: bold;
+  color: green;
+}
+
+div.destroy input[type='submit'] {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: blue;
+  font-size: smaller;
+}

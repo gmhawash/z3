@@ -32,7 +32,7 @@ module Zaytona
 
     # JavaScript files you want as :defaults (application.js is always included).
     jquery = ['https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js']
-    config.action_view.javascript_expansions[:defaults] = jquery + %w(rails wymeditor/jquery.wymeditor)
+    config.action_view.javascript_expansions[:defaults] = jquery + %w(rails_jus wymeditor/jquery.wymeditor jquery.collapser/jquery.collapser)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
