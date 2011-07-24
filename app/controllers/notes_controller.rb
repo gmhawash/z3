@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    @notes = Note.all
+    @notes = Note.all.group_by(&:category)
 
     respond_to do |format|
       format.html # index.html.erb
