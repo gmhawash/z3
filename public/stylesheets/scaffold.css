@@ -1,3 +1,8 @@
+@font-face {
+  font-family: rezland;
+  src: url('/assets/rez.ttf');
+}
+
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
@@ -82,4 +87,36 @@ div.destroy input[type='submit'] {
   cursor: pointer;
   color: blue;
   font-size: smaller;
+}
+
+#logo a { 
+  font-family: rezland; 
+  font-size: 4em;
+}
+#logo a:hover {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+#primary-menu a {
+  font-family: rezland; 
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+#slider {
+    position:relative;
+    width:962px; /* Change this to your images width */
+    height:350px; /* Change this to your images height */
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#slider a {
+    border:0;
+    display:block;
 }
