@@ -5,6 +5,7 @@ gem 'haml-rails'
 gem 'formtastic'
 gem 'heroku'
 gem 'jquery-rails', '>= 1.0.12'
+gem 'fog'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

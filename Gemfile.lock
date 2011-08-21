@@ -45,6 +45,18 @@ GEM
       rack
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    excon (0.6.5)
+    fog (0.11.0)
+      builder
+      excon (~> 0.6.5)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0.3)
+      net-scp (~> 1.0.4)
+      net-ssh (~> 2.1.4)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    formatador (0.2.0)
     formtastic (1.2.4)
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
@@ -78,6 +90,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    multi_json (1.0.3)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-ssh (2.1.4)
+    nokogiri (1.5.0)
     orm_adapter (0.0.5)
     pg (0.11.0)
     polyglot (0.3.1)
@@ -160,6 +177,7 @@ GEM
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
+    ruby-hmac (0.4.0)
     seo_meta (1.1.1)
       refinerycms-generators (~> 1.0.1)
     term-ansicolor (1.0.6)
@@ -176,6 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fog
   formtastic
   haml-rails
   heroku
