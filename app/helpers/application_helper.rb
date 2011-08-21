@@ -1,6 +1,6 @@
 module ApplicationHelper
   def logo
-    Image.where("image_name ilike ?", "logo%").first.url 
+    Image.where("image_name ilike ?", "logo%").first.try(:url)
   end
 
   def site_name
