@@ -11,7 +11,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: zaytona_dev
+  database: furqan_dev
   pool: 5
   username: mmh
   password:
@@ -37,7 +37,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: zaytona_test
+  database: furqan_test
   pool: 5
   username: mmh
   password:
@@ -45,7 +45,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: zaytona_prod
+  database: furqan_prod
   pool: 5
   username: mmh
   password:
