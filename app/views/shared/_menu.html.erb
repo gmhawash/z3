@@ -2,11 +2,15 @@
     <div id="navigation">
       <div id="primary-menu">
         <% if (roots = local_assigns[:roots] || (collection ||= @menu_pages).roots).present?  -%>
-
-        <ul class='links'>
-          <% roots.each do |menu| %>
-            <li class="menu"><%= link_to  menu.title, menu.url -%></li><% end -%>
-        </ul><% end -%>
+          <ul class='links'>
+            <% roots.each do |menu| %>
+              <li class="menu"><%= link_to  menu.title, menu.url -%></li>
+              <% unless roots.last == menu %>
+                <li class="menu">*</li>
+              <% end %>
+            <% end -%>
+          </ul>
+        <% end -%>
       </div><!-- /primary_menu -->
     </div><!-- /navigation -->
   </div>

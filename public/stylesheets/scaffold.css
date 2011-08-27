@@ -3,6 +3,7 @@
   src: url('/assets/rez.ttf');
 }
 
+
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
@@ -90,7 +91,7 @@ div.destroy input[type='submit'] {
 }
 
 #logo a { 
-  font-family: rezland; 
+  font-family: chopin_script; 
   font-size: 4em;
 }
 #logo a:hover {
@@ -106,9 +107,10 @@ div.destroy input[type='submit'] {
 
 #slider {
     position:relative;
-    width:962px; /* Change this to your images width */
-    height:350px; /* Change this to your images height */
+    width:562px; /* Change this to your images width */
+    height:300px; /* Change this to your images height */
     background:url(images/loading.gif) no-repeat 50% 50%;
+    float: left;
 }
 #slider img {
     position:absolute;

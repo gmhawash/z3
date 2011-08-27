@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: chopin_script;
+  src: url('/assets/ChopinScript.otf');
+}
+
 .node-unpublished
 {
   background-color: #fff4f4;
@@ -2014,8 +2020,6 @@ div.view:hover div.views-hide
 
 #slider
 {
-  box-shadow: 0px 0px 10px #333;
-  margin: 30px 30px 60px 30px;
   moz-box-shadow: 0px 0px 10px #333;
   position: relative;
   webkit-box-shadow: 0px 0px 10px #333;
@@ -2335,7 +2339,7 @@ div.content a.feed-icon img,div.content th img
 
 #header
 {
-  background-color: #393939;
+  background-color: #757261;
   border-left: solid 1px #6f6f6f;
   border-right: solid 1px #6f6f6f;
   border-top: solid 1px #6f6f6f;
@@ -2384,6 +2388,7 @@ div.content a.feed-icon img,div.content th img
   margin: 0 0 0 0;
   padding: 20px 30px 0 0;
   position: absolute;
+  width: 80%;
 }
 
 #account-links
@@ -2396,7 +2401,11 @@ div.content a.feed-icon img,div.content th img
 
 h1#site-name
 {
-  text-indent: -9999px;
+  font-family: chopin_script;
+  color: rgba(121,237,142,1);
+  padding: 1em;
+  font-size: 300%;
+
 }
 
 h1 a
@@ -2425,7 +2434,8 @@ h1 a
 
 #preface-wrapper,body.front #main
 {
-  background: #393939 url(/sites/all/themes/pdw/images/bg-preface-wrapper.png) repeat-x;
+  box-shadow: 0px 0px 10px #333;
+  background: rgba(249,255,130,0.18) ;
 }
 
 #preface-wrapper #preface-inner
@@ -2958,7 +2968,7 @@ div.node
 
 #navigation
 {
-  background: #2E88C9 url(/sites/all/themes/pdw/images/bg-primary-menu.png) repeat-x;
+  background: #757261 url(/sites/all/themes/pdw/images/bg-primary-menu.png) repeat-x;
   position: relative;
 }
 
@@ -2986,6 +2996,7 @@ div.node
   line-height: 30px;
   margin: 0 -2px;
   padding: 0;
+  color: white;
 }
 
 #primary-menu ul.links li.first
@@ -3793,4 +3804,24 @@ div.tweets-pulled-listing div.tweet-divider
   float: right;
   margin: 0 0 10px 10px;
 }
+
+#banner {
+  box-shadow: 0px 0px 10px #333;
+  display: block;
+  clear: both;
+  min-height: 20em;
+}
+
+#banner #name {
+  width: 402px;
+  height: 300px;
+  background-color: #4e3d36;
+  float: left;
+}
+
+#photo {
+  float: left;
+  width: 562px;
+}
+
 
