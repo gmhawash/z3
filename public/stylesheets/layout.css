@@ -2204,7 +2204,7 @@ html
 body
 {
   background: #FCFCFC;
-  color: white;
+  color: rgba(0,97,24,1);
   font-family: Arial,Helvetica,Verdana,"Bitstream Vera Sans",sans-serif;
   margin: 0;
   padding: 25px 0 0 0;
