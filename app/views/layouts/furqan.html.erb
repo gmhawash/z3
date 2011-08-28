@@ -14,6 +14,7 @@
 <div id="wrapper" class="clearfix">
     <div id="header" class="clearfix" style="border-top-left-radius: 20px 20px; border-top-right-radius: 20px 20px;">
       <div id="header-inner">
+        <div id="basmalah">&#054;</div>
         <div id="logo">
           <%= render :partial => 'shared/menu'  %>
         </div>
@@ -23,8 +24,10 @@
 
     <div id="banner" class="clearfix">
       <div id="name">
-        <%= image_tag(logo) %>
-        <h1 id="site-name"><%= site_name %></h1>
+        
+        <h1 id="site-name">
+        <div style="text-align:center; width: 100%;font-size:200%;font-family:islamic;">&#114;</div>
+        <%= site_name %></h1>
       </div>
       <div id="photo">
         <%= render :partial => 'shared/slider' %>
