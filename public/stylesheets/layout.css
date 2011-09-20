@@ -2214,7 +2214,7 @@ body
 
 h1
 {
-  color: #000;
+  color: #6F6F6F;
   font-size: 192%;
 }
 
@@ -2425,7 +2425,8 @@ h1 a
 
 #preface-wrapper,body.front #main
 {
-  background: #393939 url(/sites/all/themes/pdw/images/bg-preface-wrapper.png) repeat-x;
+  background: #a8a8a8 ;
+              
 }
 
 #preface-wrapper #preface-inner
@@ -3794,3 +3795,6 @@ div.tweets-pulled-listing div.tweet-divider
   margin: 0 0 10px 10px;
 }
 
+div#logo img {
+  vertical-align: top;
+}
