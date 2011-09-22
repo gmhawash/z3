@@ -7,5 +7,8 @@ $(function() {
   $(".category").click(function() {
     $(this).next().fadeToggle(1000);
     });
+  
+  $('.collapsible').partialcollapsiblepanel();
 });
+
 
