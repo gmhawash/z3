@@ -8,7 +8,12 @@ $(function() {
     $(this).next().fadeToggle(1000);
     });
   
-  $('.collapsible').partialcollapsiblepanel();
+
+  $('.collapsibleHeader').partialcollapsiblepanel({ 'contentHeight': 80, 
+    'enableHeaderImage': true, 
+    'expandedImageUrl': 'down.png', 
+    'collapsedImageUrl': 'up.png', 'padHeader': false, 
+    'padContent': false, 'contentClass': 'collapsible' });
 });
 
 
