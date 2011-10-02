@@ -1,5 +1,8 @@
 Zaytona::Application.routes.draw do
+
   resources :notes
+
+  match "download/:filename" => "general#download"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
