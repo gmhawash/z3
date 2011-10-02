@@ -1,0 +1,16 @@
+.collapsibleHeader
+{
+  background-color: #6A6A6A;
+  border: solid 1px  #6A6A6A;
+  width: 450px;
+  color: White;
+}
+
+.collapsible
+{
+  background-color: #dadada; 
+  border:1px solid #6A6A6A;
+  width: 450px;
+  color: Black;
+}
+

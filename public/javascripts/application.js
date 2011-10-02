@@ -9,8 +9,8 @@ $(function() {
 
   $('.collapsibleHeader').partialcollapsiblepanel({ 'contentHeight': 80, 
     'enableHeaderImage': true, 
-    'expandedImageUrl': 'down.png', 
-    'collapsedImageUrl': 'up.png', 'padHeader': false, 
+    'expandedImageUrl': 'images/down.png', 
+    'collapsedImageUrl': 'images/up.png', 'padHeader': false, 
     'padContent': false, 'contentClass': 'collapsible' });
 });
 
