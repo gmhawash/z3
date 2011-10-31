@@ -1,0 +1,23 @@
+%h1 Listing gates
+
+%table
+  %tr
+    %th Name
+    %th Image
+    %th Symbol
+    %th
+    %th
+    %th
+
+  - @gates.each do |gate|
+    %tr
+      %td= gate.name
+      %td= gate.image
+      %td= gate.symbol
+      %td= link_to 'Show', gate
+      %td= link_to 'Edit', edit_gate_path(gate)
+      %td= link_to 'Destroy', gate, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Gate', new_gate_path

@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/jnicklas/capybara.git
+  revision: 6b9e08b05ba9295f74454fd13567270417136387
+  specs:
+    capybara (1.1.1)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 0.1.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -36,16 +48,25 @@ GEM
     babosa (0.3.5)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    childprocess (0.2.2)
+      ffi (~> 1.0.6)
     columnize (0.3.4)
     devise (1.3.4)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
+    diff-lcs (1.1.3)
     dragonfly (0.9.8)
       rack
     erubis (2.6.6)
       abstract (>= 1.0.0)
     excon (0.6.6)
+    factory_girl (2.2.0)
+      activesupport
+    factory_girl_rails (1.3.0)
+      factory_girl (~> 2.2.0)
+      railties (>= 3.0.0)
+    ffi (1.0.9)
     fog (0.11.0)
       builder
       excon (~> 0.6.5)
@@ -81,6 +102,8 @@ GEM
     jquery-rails (1.0.14)
       railties (~> 3.0)
       thor (~> 0.14)
+    json (1.6.1)
+    json_pure (1.6.1)
     launchy (2.0.5)
       addressable (~> 2.2.6)
     linecache (0.46)
@@ -121,6 +144,8 @@ GEM
       thor (~> 0.14.4)
     rake (0.9.2)
     rbx-require-relative (0.0.5)
+    rdoc (3.11)
+      json (~> 1.4)
     refinerycms (1.0.0)
       bundler (~> 1.0)
       refinerycms-authentication (= 1.0.0)
@@ -173,6 +198,19 @@ GEM
       mime-types (>= 1.16)
     routing-filter (0.2.4)
       actionpack
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.7.0)
+    rspec-rails (2.7.0)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.7.0)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -180,6 +218,11 @@ GEM
       linecache (>= 0.3)
     ruby-hmac (0.4.0)
     rubyzip (0.9.4)
+    selenium-webdriver (2.10.0)
+      childprocess (>= 0.2.1)
+      ffi (= 1.0.9)
+      json_pure
+      rubyzip
     seo_meta (1.1.1)
       refinerycms-generators (~> 1.0.1)
     term-ansicolor (1.0.6)
@@ -192,11 +235,15 @@ GEM
     warden (1.0.5)
       rack (>= 1.0)
     will_paginate (3.0.1)
+    xpath (0.1.4)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  capybara!
+  factory_girl_rails
   fog
   formtastic
   haml-rails
@@ -204,6 +251,8 @@ DEPENDENCIES
   jquery-rails (>= 1.0.12)
   pg
   rails (= 3.0.8.rc1)
+  rdoc
   refinerycms
   refinerycms-i18n
+  rspec-rails (~> 2.5)
   ruby-debug

@@ -1,6 +1,7 @@
 Zaytona::Application.routes.draw do
   resources :notes
   resources :circuits
+  resources :gates
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

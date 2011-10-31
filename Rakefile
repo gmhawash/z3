@@ -3,6 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 Zaytona::Application.load_tasks

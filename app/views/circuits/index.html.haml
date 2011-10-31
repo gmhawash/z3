@@ -1,0 +1,19 @@
+%h1 Listing circuits
+
+%table
+  %tr
+    %th Title
+    %th Content
+    %th
+    %th
+    %th
+
+  - @circuits.each do |circuit|
+    %tr
+      %td= circuit.title
+      %td= circuit.content
+      %td= link_to 'Show', edit_circuit_path(circuit)
+
+%br
+
+= link_to 'New Circuit', new_circuit_path

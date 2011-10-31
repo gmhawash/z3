@@ -10,7 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110624133634) do
+ActiveRecord::Schema.define(:version => 20111031140904) do
+
+  create_table "circuits", :force => true do |t|
+    t.string   "title"
+    t.binary   "content"
+    t.integer  "num_bits"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "format",     :default => "compact"
+  end
+
+  create_table "gates", :force => true do |t|
+    t.string   "name"
+    t.binary   "image"
+    t.string   "symbol"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"

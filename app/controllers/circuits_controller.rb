@@ -1,4 +1,5 @@
 class CircuitsController < ApplicationController
+
   # GET /circuits
   # GET /circuits.xml
   def index
@@ -49,7 +50,6 @@ class CircuitsController < ApplicationController
   # POST /circuits.xml
   def create
     @circuit = Circuit.new(params[:circuit])
-    raise @circuit.inspect
 
     respond_to do |format|
       if @circuit.save

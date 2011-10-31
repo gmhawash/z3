@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @gate.name
+%p
+  %b Image:
+  = @gate.image
+%p
+  %b Symbol:
+  = @gate.symbol
+
+= link_to 'Edit', edit_gate_path(@gate)
+\|
+= link_to 'Back', gates_path

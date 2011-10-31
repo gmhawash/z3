@@ -1,0 +1,41 @@
+= form_for @circuit, :html => {:multipart => true} do |f|
+  -if @circuit.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@circuit.errors.count, "error")} prohibited this circuit from being saved:"
+      %ul
+        - @circuit.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :format
+    = f.select :format, Circuit.options_for_format
+  .field.float-left
+    = f.label :content
+    = f.text_area :content
+  .field.help
+    %p The following options are supported:
+    %p #: Comment line (ignored)
+    %p 1: Control line
+    %p 0: Not involved
+    %p +: NOT gate
+    %p x: SWAP gate (not yet implemented)
+    %p v: V Gate (not yet implemented)
+    %p V: V+ Gate  (not yet implemented)
+
+  .actions.brk
+    = f.submit 'Draw Circuit'
+
+    = link_to 'My circuits', circuits_path
+
+- if @gates
+  #circuit-graph
+    - literal = ("a".ord-1).chr
+    - @gates.each do |qubits|
+      .row
+        %div{:class => :literal}= literal.succ!
+        - qubits.each do |qubit|
+          %div{:class => GATE_MAP[qubit]}
+

@@ -6,6 +6,7 @@ gem 'formtastic'
 gem 'heroku'
 gem 'jquery-rails', '>= 1.0.12'
 gem 'fog'
+gem 'rdoc'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -45,6 +46,10 @@ group :development, :test do
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
   # Finally, run 'rake' to run the tests.
   # gem 'refinerycms-testing',    '~> 1.0.0'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'ruby-debug'
+  gem 'rspec-rails', '~> 2.5'
+  gem 'factory_girl_rails'
 end
 
 # END REFINERY CMS ============================================================

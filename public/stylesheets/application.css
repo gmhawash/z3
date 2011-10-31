@@ -2,3 +2,18 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+#circuit-graph {clear:both; display:block; margin: 2em;}
+#circuit-graph .row  {float :left; display:block; clear:both;}
+#circuit-graph .row div {float :left; width: 31px; height: 28px;}
+
+#circuit-graph .row .e  {background:transparent url('/images/empty.png')}
+#circuit-graph .row .ct {background-image: url('/images/ctrl_top.png')}
+#circuit-graph .row .cb {background-image: url('/images/ctrl_bottom.png')}
+#circuit-graph .row .c2 {background-image: url('/images/ctrl_both.png')}
+#circuit-graph .row .nt {background-image: url('/images/cnot_bottom.png')}
+#circuit-graph .row .nb {background-image: url('/images/cnot_top.png')}
+#circuit-graph .row .n2 {background-image: url('/images/cnot_both.png')}
+#circuit-graph .row .w  {background-image: url('/images/wire_both.png')}
+#circuit-graph .row .n  {background-image: url('/images/not.png')}
+

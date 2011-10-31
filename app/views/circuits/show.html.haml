@@ -1,0 +1,16 @@
+%p
+  %b Title:
+  = @circuit.title
+
+= link_to 'Edit', edit_circuit_path(@circuit)
+\|
+= link_to 'Back', circuits_path
+- if @gates
+  #circuit-graph
+    - literal = ("a".ord-1).chr
+    - @gates.each do |qubits|
+      .row
+        %div{:class => :literal}= literal.succ!
+        = qubits.each do |qubit|
+          %div{:class => GATE_MAP[qubit]}
+
