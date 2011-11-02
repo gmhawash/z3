@@ -21,6 +21,8 @@ module CircuitsHelper
 
     list = [EMPTY] * nbits
 
+    return list if target == 0
+
     if control == 0
       list[target_pos] = NOT
       return list.reverse
@@ -50,7 +52,7 @@ module CircuitsHelper
   end
 
   def target_position(target)
-    raise ArgumentError if target == 0
+    return nil if target == 0
     @bit_array ||= bit_array
 
     count = 0
