@@ -2123,7 +2123,7 @@ address,caption,cite,code,dfn,em,strong,th,var
 
 li
 {
-  list-style: none;
+  list-style: disc;
 }
 
 caption,th
@@ -2223,7 +2223,6 @@ body
 
 #page
 {
-  border: solid 1px #6f6f6f;
 }
 
 h1
@@ -2349,7 +2348,7 @@ div.content a.feed-icon img,div.content th img
 
 #header
 {
-  background-color: #757261;
+  background-color: #58332B;
   border-left: solid 1px #6f6f6f;
   border-right: solid 1px #6f6f6f;
   border-top: solid 1px #6f6f6f;
@@ -2580,7 +2579,7 @@ h1 a
 
 #footer
 {
-  background-color: #757261;
+  background-color: #58332B;
 }
 
 #footer-wrapper
@@ -2977,7 +2976,7 @@ div.node
 
 #navigation
 {
-  background: #757261 url(/sites/all/themes/pdw/images/bg-primary-menu.png) repeat-x;
+  background: #58332B url(/sites/all/themes/pdw/images/bg-primary-menu.png) repeat-x;
   position: relative;
 }
 
@@ -3022,7 +3021,7 @@ div.node
   background: transparent url(/sites/all/themes/pdw/images/primary-menu-circle.png) no-repeat left center;
   color: #fff;
   margin: 0;
-  padding: 0 16px 2px 16px;
+  padding: 0 4px 2px 4px;
   text-decoration: none;
   text-transform: lowercase;
 }
