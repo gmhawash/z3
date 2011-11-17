@@ -3798,3 +3798,7 @@ div.tweets-pulled-listing div.tweet-divider
 div#logo img {
   vertical-align: top;
 }
+
+h1#body_content_title {
+  margin-bottom: 0.5em;
+}
