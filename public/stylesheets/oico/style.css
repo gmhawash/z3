@@ -121,6 +121,7 @@ h4 { font-size:1em; margin-bottom:12px;}
 
 
 /*header*/
+#header.short {height: 152px; }
 #header .row-1 { height:152px; position:relative;}
 #header .row-1 .fleft { padding:21px 0 0 0;}
 #header .row-1 .fright { padding:94px 1px 0 0; text-align: center;}
