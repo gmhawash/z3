@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<%= stylesheet_link_tag 'oico/layout', 'oico/style' %>
+<%= javascript_include_tag 'oico/rollover' %>
+</head>
+
+<body id="page1" onload="MM_preloadImages('images/oico/m1-act.jpg','images/oico/m2-act.jpg','images/oico/m3-act.jpg','images/oico/m4-act.jpg','images/oico/m5-act.jpg')">
+<div class="tail-top">
+   <div class="tail-bottom">
+      <div id="main">
+         <!-- header -->
+         <div id="header">
+            <div class="row-1">
+               <div class="fleft"><a href="index.html"><img alt="" src="images/oico/logo.jpg" /></a></div>
+               <div class="fright">
+                 <a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_1','','images/oico/m1-act.jpg',1)"><img alt="" src="images/oico/m1-act.jpg" id="r_1" /></a>
+                 <a href="index-1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_2','','images/oico/m2-act.jpg',1)">One</a>
+                 <a href="index-2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_3','','images/oico/m3-act.jpg',1)">Two</a>
+                 <a href="index-1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_2','','images/oico/m2-act.jpg',1)">Three</a>
+                 <a href="index-2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_3','','images/oico/m3-act.jpg',1)">Four</a>
+               </div>
+            </div>
+            <div class="row-2">
+            	<div class="fleft"><img alt="" src="images/oico/main-banner.jpg" /></div>
+               <div id="header-box">
+               	<div class="inner">
+                  	<img alt="" src="images/oico/slogan-txt.jpg" />
+                     <ul class="banners">
+                     	<li><a href="#"><img alt="" src="images/oico/banner1.jpg" /></a></li>
+                        <li><a href="#"><img alt="" src="images/oico/banner2.jpg" /></a></li>
+                        <li><a href="#"><img alt="" src="images/oico/banner3.jpg" /></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- content -->
+         <div id="content">
+            <div class="wrapper">
+               <div class="col-1">
+               	<div class="box">
+                  	<div class="border-top">
+                     	<div class="border-right">
+                        	<div class="border-bot">
+                           	<div class="border-left">
+                              	<div class="left-top-corner">
+                                 	<div class="right-top-corner">
+                                    	<div class="right-bot-corner">
+                                       	<div class="left-bot-corner">
+                                          	<div class="inner">
+                                             	<div class="title1"><img alt="" src="images/oico/1page-title1.gif" /></div>
+                                                <ul class="list1">
+                                                	<li><a href="#">Monthly Gathering</a>  August 25, 2008 5:30 P.M.</li>
+                                                   <li><a href="#">Board of Trustees Meeting</a> August 26, 2008 2:00P.M.</li>
+                                                   <li><a href="#">ICJAX Board Meeting</a> August 26, 2008 2:00 P.M.</li>
+                                                   <li><a href="#">IIJAX Board Meeting</a> August 16, 2008 7:00 P.M.</li>
+                                                   <li><a href="#">Announcements Newsletter</a> April-June 2008 Issue</li>
+                                                   <li><a href="#">Jumma Khutba Archives</a></li>
+
+                                                </ul>
+
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="box1">
+                  	<div class="left-top-corner">
+                     	<div class="right-top-corner">
+                        	<div class="right-bot-corner">
+                           	<div class="left-bot-corner">
+                              	<div class="inner">
+                                 	<div class="title2"><img alt="" src="images/oico/1page-title2.gif" /></div>
+                                    <ul class="list2">
+                                    	<li>26 Rajab 1428 August 9, 2007<br />
+                                       Help    Powered by www.IslamicFinder.org</li>
+                                       <li><span>Day</span>Thursday</li>
+                                       <li><span>Fajr</span>5:39</li>
+                                       <li><span>Sunrise</span>6:50</li>
+                                       <li><span>Dhuhr</span>1:33</li>
+                                       <li><span>Asr</span>5:10</li>
+                                    </ul>
+                                    <div class="alignright"><a href="#"><img alt="" src="images/oico/link1.gif" /></a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2 indent">
+                  <%= yield %>
+               </div>
+            </div>
+         </div>
+         <!-- footer -->
+         <div id="footer">
+         	<p>Islamic social center. &copy; 2008 | <a href="index-5.html">Privacy Policy</a></p>
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+</html>
