@@ -1,0 +1,12 @@
+ <div class="fright">
+    <% if (roots = local_assigns[:roots] || (collection ||= @menu_pages).roots).present?  -%>
+      <% roots.each do |menu| %>
+        <%= link_to  menu.title, menu.url -%>
+      <% end %>
+    <% end -%>
+   <a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_1','','images/oico/m1-act.jpg',1)"><img alt="" src="images/oico/m1-act.jpg" id="r_1" /></a>
+   <a href="index-1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_2','','images/oico/m2-act.jpg',1)">One</a>
+   <a href="index-2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_3','','images/oico/m3-act.jpg',1)">Two</a>
+   <a href="index-1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_2','','images/oico/m2-act.jpg',1)">Three</a>
+   <a href="index-2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r_3','','images/oico/m3-act.jpg',1)">Four</a>
+ </div>
