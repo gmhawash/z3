@@ -15,7 +15,7 @@
          <!-- header -->
          <div id="header" class='<%= request.url == root_url ? '' : 'short'  %>'>
             <div class="row-1">
-               <div class="fleft"><a href="index.html"><img alt="" src="images/oico/logo.jpg" /></a></div>
+               <div class="fleft"><a href="/"><img alt="" src="images/oico/logo.jpg" /></a></div>
                <%= render :partial => 'shared/oico/menu'  %>
             </div>
             <% if request.url == root_url %>
