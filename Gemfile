@@ -63,3 +63,5 @@ end
 gem 'refinerycms-i18n'
 
 # END USER DEFINED
+
+gem 'refinerycms-feeds', '1.0', :path => 'vendor/engines'

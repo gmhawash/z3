@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    feeds:
+      title: Feeds
+  admin:
+    feeds:
+      actions:
+        create_new: Lag en ny Feed
+        reorder: Endre rekkefølgen på Feeds
+        reorder_done: Ferdig å endre rekkefølgen Feeds
+      records:
+        title: Feeds
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Feeds enda. Klikk på "Lag en ny Feed" for å legge til din første feed.
+      feed:
+        view_live_html: Vis hvordan denne feed ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne feed
+        delete: Fjern denne feed permanent
+  feeds:
+    show:
+      other: Andre Feeds

@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @feed.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @feed.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @feed.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Message</h1>
+    <p>
+      <%=raw @feed.message %>
+    </p>
+  </section>
+  <section>
+    <h1>Date</h1>
+    <p>
+      <%=raw @feed.date %>
+    </p>
+  </section>
+  <section>
+    <h1>Status</h1>
+    <p>
+      <%=raw @feed.status %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="feeds">
+      <% @feeds.each do |feed| %>
+        <li>
+          <%= link_to feed.name, feed_path(feed) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

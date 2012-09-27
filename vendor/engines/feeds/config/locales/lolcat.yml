@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    feeds:
+      title: Feeds
+  admin:
+    feeds:
+      actions:
+        create_new: CREATE NEW Feed
+        reorder: REORDR Feeds
+        reorder_done: DUN REORDERIN Feeds
+      records:
+        title: Feeds
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Feeds YET. CLICK "CREATE NEW Feed" 2 ADD UR FURST feed.
+      feed:
+        view_live_html: VIEW DIS feed LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS feed
+        delete: REMOOV DIS feed FOREVR
+  feeds:
+    show:
+      other: OTHR Feeds

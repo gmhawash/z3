@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    feeds:
+      title: Feeds
+  admin:
+    feeds:
+      actions:
+        create_new: Maak een nieuwe Feed
+        reorder: Wijzig de volgorde van de Feeds
+        reorder_done: Klaar met het wijzingen van de volgorde van de Feeds
+      records:
+        title: Feeds
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Feeds. Druk op 'Maak een nieuwe Feed' om de eerste aan te maken.
+      feed:
+        view_live_html: Bekijk deze feed op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze feed
+        delete: Verwijder deze feed voor eeuwig
+  feeds:
+    show:
+      other: Andere Feeds

@@ -1,0 +1,39 @@
+<% content_for :body_content_left do %>
+  <%= form_for :feed,  :html => {:id => 'feed'} do |f| -%>
+    <div class='field float_left'>
+      <%= f.label :name -%>
+      <%= f.text_field :name, :class => 'larger widest'  -%>
+    </div>
+    
+    <div class='field float_left'>
+      <%= f.label :email -%>
+      <%= f.text_field :email  -%>
+    </div>
+    
+    <div class='field message'>
+      <div id='page_part_editors'>
+        <% [:message].each do |part| %>
+          <div class='page_part' id='<%= part %>'>
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <%= f.submit 'Submit'%>
+  <% end -%>
+
+  <ul id="feeds">
+    <% @feeds.each do |feed| %>
+      <li>
+        <div class='header'>
+          <%= feed.header %>
+        </div>
+        <div class='message'>
+        <%= feed.message %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

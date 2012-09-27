@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    feeds:
+      title: Feeds
+  admin:
+    feeds:
+      actions:
+        create_new: Add New Feed
+        reorder: Reorder Feeds
+        reorder_done: Done Reordering Feeds
+      records:
+        title: Feeds
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Feeds yet. Click "Add New Feed" to add your first feed.
+      feed:
+        view_live_html: View this feed live <br/><em>(opens in a new window)</em>
+        edit: Edit this feed
+        delete: Remove this feed forever
+  feeds:
+    show:
+      other: Other Feeds

@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-feeds (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -208,5 +213,6 @@ DEPENDENCIES
   rails (= 3.0.9)
   rake (~> 0.8.7)
   refinerycms
+  refinerycms-feeds (= 1.0)!
   refinerycms-i18n
   ruby-debug

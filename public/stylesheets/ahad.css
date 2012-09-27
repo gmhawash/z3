@@ -3839,3 +3839,50 @@ div.tweets-pulled-listing div.tweet-divider
   color: white;
   text-align: center;
 }
+
+.float_left {
+  float: left;
+}
+
+#feed  {
+  padding: 1em;
+  border: 1px solid gray;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#feed .field {
+  margin: 1em;
+}
+#feed .field label
+{
+  width: 10em; 
+  display: block;
+}
+
+#feed .message {
+  display: block;
+  clear: both;
+}
+
+#feed .message textarea {
+  width: 90%;
+  height: 6em;
+}
+
+#feeds li {
+  list-style-type: none;
+  background-color: white;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid gray;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#feeds li .header 
+{
+  font-style: italic;
+  font-size: smaller;
+  padding-bottom: 0.5em;
+}
