@@ -43,9 +43,11 @@ test:
   password: seven11
 
 production:
+  host: db.cecs.pdx.edu
+  port: 5432
   adapter: postgresql
   encoding: unicode
-  database: qucircuit_prod
+  database: quantumc
   pool: 5
-  username: mmh
-  password: seven11
+  username: quantumc
+  password: s6p-nxgJ5d
