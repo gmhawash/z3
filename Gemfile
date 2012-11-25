@@ -7,7 +7,8 @@ gem 'heroku'
 gem 'jquery-rails', '>= 1.0.12'
 gem 'fog'
 gem 'rdoc'
-gem 'qu_function', :path => '~/src/quantum/qu_function'
+#gem 'qu_function', :path => '~/src/quantum/qu_function'
+gem 'qu_function', :git => 'git://github.com/QuHub/qu_function.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

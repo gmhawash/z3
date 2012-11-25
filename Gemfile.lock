@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/QuHub/qu_function.git
+  revision: ee3cbf44fe4764f84aa2b286a0c35296bd4f8502
+  specs:
+    qu_function (0.0.3)
+      activemodel
+      activesupport
+      liquid
+
+GIT
   remote: git://github.com/jnicklas/capybara.git
   revision: 6b9e08b05ba9295f74454fd13567270417136387
   specs:
@@ -9,14 +18,6 @@ GIT
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-
-PATH
-  remote: ~/src/quantum/qu_function
-  specs:
-    qu_function (0.0.2)
-      activemodel
-      activesupport
-      liquid
 
 GEM
   remote: http://rubygems.org/
