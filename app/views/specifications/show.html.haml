@@ -1,0 +1,20 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @specification.name
+%p
+  %b Radix:
+  = @specification.radix
+%p
+  %b Variables:
+  = @specification.variables
+%p
+  %b Completed:
+  = @specification.completed
+%p.specification
+  = text_area_tag :specification, @specification.content, :disabled => true
+
+= link_to 'Download XQS file', specification_download_path(@specification)
+\|
+= link_to 'Specification List', specifications_path

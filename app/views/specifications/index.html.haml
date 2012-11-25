@@ -1,0 +1,30 @@
+%h1 Listing specifications
+
+%table.dataTable
+  %thead
+    %tr
+      %th Name
+      %th Signature
+      %th Radix
+      %th Variables
+      %th Complete
+      %th
+
+  %body
+    - @specifications.each do |specification|
+      %tr
+        %td= specification.human_name
+        %td= specification.signature
+        %td= specification.human_radix
+        %td= specification.variables
+        %td= specification.completed
+        %td= link_to 'Show', specification
+
+%br
+
+= link_to 'New Specification', new_specification_path
+
+= javascript_tag do
+  $(document).ready(function() {
+  $('.dataTable').dataTable();
+  } );dataTable

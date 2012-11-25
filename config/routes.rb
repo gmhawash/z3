@@ -1,4 +1,8 @@
 Zaytona::Application.routes.draw do
+  resources :specifications do
+    get :download
+  end
+
   resources :notes
   resources :circuits
   resources :gates

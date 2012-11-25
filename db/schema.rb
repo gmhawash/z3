@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111031140904) do
+ActiveRecord::Schema.define(:version => 20121125025553) do
 
   create_table "circuits", :force => true do |t|
     t.string   "title"
@@ -74,8 +74,8 @@ ActiveRecord::Schema.define(:version => 20111031140904) do
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
-    t.string   "custom_title"
     t.string   "title"
+    t.string   "custom_title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -168,6 +168,28 @@ ActiveRecord::Schema.define(:version => 20111031140904) do
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "specifications", :force => true do |t|
+    t.string   "name"
+    t.integer  "radix"
+    t.integer  "variables"
+    t.text     "content"
+    t.string   "signature"
+    t.boolean  "completed"
+    t.text     "parameters"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "specificiations", :force => true do |t|
+    t.string   "name"
+    t.integer  "radix"
+    t.integer  "variables"
+    t.text     "content"
+    t.text     "complete"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

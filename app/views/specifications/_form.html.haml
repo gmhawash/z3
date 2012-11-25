@@ -1,0 +1,22 @@
+= form_for @specification do |f|
+  -if @specification.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@specification.errors.count, "error")} prohibited this specification from being saved:"
+      %ul
+        - @specification.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.select :name, Specification::AvailableFunctions 
+  .field
+    = f.label :radix
+    = f.select :radix, Specification::RadixList
+  .field
+    = f.label :variables
+    = f.select :variables, (3..20)
+  .field
+    = f.label :completed
+    = f.check_box :completed
+  .actions
+    = f.submit 'Generate'

@@ -31,7 +31,7 @@ module Zaytona
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    jquery = ['https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js']
+    jquery = ['https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js', 'http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js']
     config.action_view.javascript_expansions[:defaults] = jquery + %w(rails_jus wymeditor/jquery.wymeditor nivo-slider/jquery.nivo.slider partial-collapsible-panel)
 
     # Configure the default encoding used in templates for Ruby 1.9.

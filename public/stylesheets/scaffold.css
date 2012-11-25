@@ -120,3 +120,8 @@ div.destroy input[type='submit'] {
     border:0;
     display:block;
 }
+
+p.specification textarea {
+  width: 70em;
+  height: 20em;
+}
