@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def site_name
-    RefinerySetting.get(:site_name)
+    "Portland Quantum Logic Group"
   end
 
   def banners
