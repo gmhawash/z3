@@ -1,7 +1,7 @@
  <div class="fright">
     <% if (roots = local_assigns[:roots] || (collection ||= @menu_pages).roots).present?  -%>
       <% roots.each do |menu| %>
-        <%= link_to  menu.title, menu.url -%>
+        <%= link_to  menu.title, menu.url, :class => active_link(menu.url) -%>
       <% end %>
     <% end -%>
  </div>

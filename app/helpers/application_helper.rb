@@ -22,4 +22,8 @@ module ApplicationHelper
       slug.sluggable.content_for(:body).html_safe
     end
   end
+
+  def active_link(href)
+    url_for(href) == request.path ? 'active' : ''
+  end
 end
