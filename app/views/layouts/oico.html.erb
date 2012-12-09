@@ -34,32 +34,6 @@
          <!-- content -->
          <div id="content">
             <div class="wrapper">
-              <% if request.url == root_url %>
-               <div class="col-1">
-               	<div class="box">
-                  	<div class="border-top">
-                     	<div class="border-right">
-                        	<div class="border-bot">
-                           	<div class="border-left">
-                              	<div class="left-top-corner">
-                                 	<div class="right-top-corner">
-                                    	<div class="right-bot-corner">
-                                       	<div class="left-bot-corner">
-                                          	<div class="inner">
-                                             	<div class="title1"><img alt="" src="images/oico/1page-title1.gif" /></div>
-                                                <%= raw @page.content_for(:side_body) %>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <% end %>
                <div class="col-2 indent">
                   <%= yield %>
                </div>
