@@ -29,6 +29,8 @@
                <%= render :partial => 'shared/oico/menu'  %>
             </div>
             <% if request.url == root_url %>
+
+              <%= yield :sidebar %>
               <% logo = Image.where("image_name ilike ?", "logo.jpg").first %>
               <div class="row-2">
                 <div style="float:left; display:block; margin: 1em;">
