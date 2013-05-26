@@ -30,7 +30,7 @@
             </div>
             <% if request.url == root_url %>
               <div class="row-2">
-                <%= yield :sidebar %>
+                <%= Page.find_by_title("Header").parts.find_by_title("Body").body.html_safe %>
               </div>
            <% end %>
          </div>
