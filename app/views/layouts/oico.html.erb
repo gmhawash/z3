@@ -19,15 +19,14 @@
                <%= render :partial => 'shared/oico/menu'  %>
             </div>
             <% if request.url == root_url %>
+              <% logo = Image.where("image_name ilike ?", "logo.jpg").first %>
               <div class="row-2">
-                <div class="fleft">
-                  <%= home_page_left_box %>
+                <div style="float:left; display:block; margin: 1em;">
+                  <a href="/"><img alt="" src="<%= logo.url %>"></a>
                 </div>
-                  <div id="header-box">
-                    <div class="inner">
-                      <%= home_page_right_box %>
-                    </div>
-                 </div>
+                <div style="float:left; display:block; margin: 1em;">
+                  <iframe width="470" height="318" src="http://www.youtube.com/embed/u6VccVQNnAo" frameborder="0"></iframe>
+                </div>
               </div>
            <% end %>
          </div>
