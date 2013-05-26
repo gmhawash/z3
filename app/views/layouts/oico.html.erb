@@ -29,16 +29,8 @@
                <%= render :partial => 'shared/oico/menu'  %>
             </div>
             <% if request.url == root_url %>
-
-              <%= yield :sidebar %>
-              <% logo = Image.where("image_name ilike ?", "logo.jpg").first %>
               <div class="row-2">
-                <div style="float:left; display:block; margin: 1em;">
-                  <a href="/"><img alt="" src="<%= logo.url %>"></a>
-                </div>
-                <div style="float:left; display:block; margin: 1em;">
-                  <iframe width="470" height="318" src="http://www.youtube.com/embed/u6VccVQNnAo" frameborder="0"></iframe>
-                </div>
+                <%= yield :sidebar %>
               </div>
            <% end %>
          </div>
