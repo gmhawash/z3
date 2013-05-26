@@ -6,6 +6,16 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <%= stylesheet_link_tag 'oico/layout', 'oico/style' %>
 <%= javascript_include_tag 'oico/rollover' %>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+</script>
 </head>
 
 <body id="page1" onload="MM_preloadImages('images/oico/m1-act.jpg','images/oico/m2-act.jpg','images/oico/m3-act.jpg','images/oico/m4-act.jpg','images/oico/m5-act.jpg')">
@@ -21,7 +31,7 @@
             <% if request.url == root_url %>
               <% logo = Image.where("image_name ilike ?", "logo.jpg").first %>
               <div class="row-2">
-                <div style="float:left; display:block; margin: 1em;">
+                <div style="float:left; display:block">
                   <a href="/"><img alt="" src="<%= logo.url %>"></a>
                 </div>
                 <div style="float:left; display:block; margin: 1em;">
