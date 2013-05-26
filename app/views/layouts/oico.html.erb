@@ -31,7 +31,7 @@
             <% if request.url == root_url %>
               <% logo = Image.where("image_name ilike ?", "logo.jpg").first %>
               <div class="row-2">
-                <div style="float:left; display:block">
+                <div style="float:left; display:block; margin: 1em;">
                   <a href="/"><img alt="" src="<%= logo.url %>"></a>
                 </div>
                 <div style="float:left; display:block; margin: 1em;">
